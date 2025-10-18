@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asta9 | Launching Soon</title>
+  <style>
+    body {
+      background-color: #005CFF; /* Matched background color to logo */
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    img {
+      width: 140px;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    h1, h2 {
+      white-space: nowrap;
+      overflow: hidden;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.2em;
+      margin: 0;
+      animation: typing 3s steps(20, end) forwards;
+    }
+    h2 {
+      font-size: 3em;
+      font-weight: 700;
+      color: #ffffff;
+      text-shadow: 0 0 15px #ffffff;
+      margin-bottom: 10px;
+    }
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 18ch; }
+    }
+    .dots::after {
+      content: '';
+      animation: dots 1.5s steps(4, end) infinite;
+    }
+    @keyframes dots {
+      0%, 20% { content: ''; }
+      40% { content: '.'; }
+      60% { content: '..'; }
+      80%, 100% { content: '...'; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <img src="lg1.png" alt="Asta9 Logo" />
+  <h2>Asta9</h2>
+  <h1 class="dots">Launching Soon</h1>
+</body>
+</html>
